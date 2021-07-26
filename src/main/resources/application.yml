@@ -1,1 +1,13 @@
-
+server:
+  port: 8050
+spring:
+  servlet:
+    # 上传单个文件和总大小设置
+    multipart:
+      max-file-size: 10MB
+      max-request-size: 1GB
+  datasource:
+    url: jdbc:mysql://127.0.0.1:3306/dream?useSSL=false&useUnicode=true&characterEncoding=utf8&zeroDateTimeBehavior=convertToNull
+    username: root
+    password: 775235
+    type: com.alibaba.druid.pool.DruidDataSource
